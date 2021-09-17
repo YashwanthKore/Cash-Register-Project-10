@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto+Slab:wght@200;300;500&display=swap');
 
+body{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(116, 108, 108));
+   } 
+
 table, th,td {
     border: 1px solid black;
     text-align: center;
     margin: auto;
     padding: 1rem;
+    background-color: white;
   }
+
   h2, #btn-check{
       margin-top: 1rem;
   }
-body{
- text-align: center;
- font-family: 'Nunito', sans-serif;
-}
+
 input,label{
     /* width: 40%; */
     height: 1.5rem;
@@ -48,10 +53,15 @@ input{
     padding: 1rem;
 }
 
+a{
+ color: black;
+}
+
 .links{
     text-decoration: none;
 }
 
 #error-message-div{
     color: tomato;
+    background-color: white;
 }
