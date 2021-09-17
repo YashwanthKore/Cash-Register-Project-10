@@ -16,14 +16,13 @@ function hideErrorMessage() {
 
 function vadiladateAmounts() {
 
-    if (billAmount.value >= 0) {
+    if (Number(billAmount.value) >= 0) {
 
-        if (givenAmount.value > billAmount.value) {
-            var amountToReturn = givenAmount.value - billAmount.value
+        if (Number(givenAmount.value) > Number(billAmount.value)) {
+            var amountToReturn = Number(givenAmount.value) - Number(billAmount.value)
             //    console.log(amountToReturn)
             hideErrorMessage()
             calculateChange(amountToReturn)
-
 
         } else {
             var errorMessage = "*Please enter valid amount: Given amount should be greater than Bill amount"
