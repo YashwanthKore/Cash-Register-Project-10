@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cash Register</title>
+</head>
+<body>
+    
+    <h1>Cash register manager</h1>
+    <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+
+    <div id="#amount-div">
+        <label for="bill-amount">Bill Amount:</label>
+        <input id="bill-amount" type="number">
+        <label for="given-amount">Given Amount:</label>
+        <input id="given-amount" type="number">
+        <div id="error-message-div"></div>
+        <button id="btn-check"> Check</button>
+    </div>
+
+    <h2>Return Change</h2>
+
+    <table>
+        <tr>
+            <th>Number of Notes</th>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+          </tr>
+
+          <tr>
+            <th>Note</th>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+    </table>
+
+    <footer class="footer-container">
+
+        <ul>
+            <h3 class="footer-list"> © | 2021 | Yashwanth Kore</h3>
+            <li class="lists-inline"> <a class="footer-list " href="https://github.com/YashwanthKore"><strong>Github</strong></a> </li>
+            <li class="lists-inline"> <a class="footer-list" href="https://www.linkedin.com/in/yashwanth-kore-14591b196/"><strong>LinkedIn</strong> </a> </li>
+            <li class="lists-inline"> <a class="footer-list" href="https://twitter.com/YashwanthKore"><strong>Twitter </strong></a> </li>
+        </ul>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
